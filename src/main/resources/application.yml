@@ -1,0 +1,29 @@
+# spring相关配置
+spring:
+  # 数据库相关配置
+  datasource:
+    # 数据库地址
+    url: jdbc:mysql://127.0.0.1:3306/demo?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    # 数据库用户名
+    username: root
+    # 数据库密码
+    password: root
+    # 数据库驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # freemarker相关配置
+  freemarker:
+    # 文件编码
+    charset: UTF-8
+    # 文件后缀名
+    suffix: .ftl
+    # 内容编码
+    content-type: text/html; charset=utf-8
+    # 模板加载路径
+    template-loader-path: classpath:/templates
+    # 获取应用程序上下文的request对象
+    request-context-attribute: request
+    # 页面缓存
+    cache: false
+    check-template-location: true
+    expose-request-attributes: false
+    expose-session-attributes: false
